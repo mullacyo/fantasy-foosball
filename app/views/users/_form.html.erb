@@ -1,0 +1,15 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, :class => "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, :class => "form-control" %>
+  </div>
+  
+  <div class="actions" style="margin-top: 20px">
+    <%= form.submit :class => "form-control btn btn-outline-success my-2 my-sm-0" %>
+  </div>
+<% end %>
