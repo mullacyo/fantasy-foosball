@@ -1,0 +1,20 @@
+        <%= form_with(model: team, local: true) do |form| %>
+        <div class="field">
+            <%= form.label :team_name %>
+            <%= form.text_field :name, :class => "form-control" %>
+        </div>
+
+        <div class="field">
+            <%= form.label :id_of_player_1 %>
+            <%= form.text_field :player1_id, :class => "form-control" %>
+        </div>
+
+        <div class="field">
+            <%= form.label :id_of_player_2 %>
+            <%= form.text_field :player2_id, :class => "form-control" %>
+        </div>
+        
+        <div class="actions" style="margin-top: 20px">
+            <%= form.submit :class => "form-control btn btn-outline-success my-2 my-sm-0" %>
+        </div>
+        <% end %>

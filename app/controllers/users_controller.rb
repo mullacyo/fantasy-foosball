@@ -13,6 +13,7 @@ class UsersController < ApplicationController
             redirect_to root_path
             flash[:success] = "User created!"
         else
+            redirect_to new_user_path
             flash[:danger] = "Error, please try again."
         end
     end

@@ -1,0 +1,9 @@
+<div class="container card" style="width: 30rem;">
+    <div class="card-body">
+        <h1 class="display-4 text-center">All Users</h1>
+        <% @teams.each do |team| %>
+            <%= team.id %>.
+            <%= team.name %>
+        <% end %>
+    </div>
+</div>
